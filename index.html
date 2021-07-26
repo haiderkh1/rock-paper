@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>JS-game</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="scores">
+        <p>
+          Haider :
+          <span id="computer_score">0</span>
+        </p>
+        <p>
+          You :
+          <span id="user_score">0</span>
+        </p>
+      </div>    
+        </div>
+        <div class="weapons">
+        <button onclick="checker('rock')">
+          <i class="far fa-hand-rock"></i>
+        </button>
+        <button onclick="checker('paper')">
+          <i class="far fa-hand-paper"></i>
+        </button>
+        <button onclick="checker('scissor')">
+          <i class="far fa-hand-scissors"></i>
+        </button>
+      </div>
+      <div class="details">
+        <p id="user_choice"></p>
+        <p id="comp_choice"></p>
+        <p id="result"></p>
+      </div> 
+      </div>
+      
+      
+    </div>
+
+    <!-- js file  -->
+    <script src="main.js"></script>
+  </body>
+</html>
